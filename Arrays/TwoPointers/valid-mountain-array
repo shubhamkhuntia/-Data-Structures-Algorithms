@@ -1,0 +1,20 @@
+class Solution {
+    public boolean validMountainArray(int[] arr) {
+        if(arr.length<3){
+            return false;
+        }
+
+        int lo=0,hi = arr.length-1;
+        while(lo+1<arr.length && arr[lo]<arr[lo+1]){
+            lo++;
+        }
+        while(hi>=1 && arr[hi-1]>arr[hi]){
+            hi--;
+        }
+        if(lo==0 || hi==arr.length-1){
+            return false;
+        }
+
+        return lo==hi;
+    }
+}
