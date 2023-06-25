@@ -1,5 +1,6 @@
 // https://leetcode.com/problems/find-greatest-common-divisor-of-array
-
+// Time Complexity: O(logbase2max(A,B))
+// Euclid's GCD Alogrithm used
 class Solution {
     public int findGCD(int[] nums) {
         int min = nums[0];
