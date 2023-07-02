@@ -1,6 +1,6 @@
-https://www.hackerearth.com/problem/algorithm/hp-and-nth-number-408fb73b/
+// https://www.hackerearth.com/problem/algorithm/hp-and-nth-number-408fb73b/
 
-```Java
+
 static long solve(long a, long b, long N){
        // Write your code here
         long max = Math.max(a, b);
@@ -14,6 +14,6 @@ static long solve(long a, long b, long N){
         long lcm = (a*b)/hcf;
         return lcm*N;
     }
-```
 
-TC :  O(logbase2max(A,B))
+
+// TC :  O(logbase2max(A,B))
